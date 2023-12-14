@@ -11,6 +11,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--fonts);
+  color: var(--light-color);
 }
 
 header,
@@ -27,8 +29,37 @@ footer {
 main {
   height: calc(100vh - 160px);
   background-color: var(--main-color);
+  padding: 1rem;
+
+
 }
 
+main>section>* {
+  padding: 0.3rem 0;
+}
+
+button {
+  background-color: var(--second-color);
+  color: var(--light-color);
+  font-size: 13px;
+  border-radius: 12px;
+  border: 0px;
+  padding: 5px 30px;
+  width: 161px;
+  height: 30px;
+  flex-shrink: 0;
+
+}
+
+
+/*Pour afficher / cacher les composants */
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
 
 
 

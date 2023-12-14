@@ -2,9 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import ClickCollect from "./components/Click'n'collect/ClickCollect";
+import Cities from "./components/Cities/Cities";
+import ClickOrDeliver from "./components/ClickOrDeliver/ClickOrDeliver";
 import Livraison from "./components/Livraison/Livraison";
 import App from "./App";
+import Layout from "./components/layout/Layout";
+
 
 const router = createBrowserRouter([
   {
@@ -12,9 +15,15 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "clickncollect",
-    element: <ClickCollect />,
+    path: "cities",
+    element: <Cities />,
   },
+
+  {
+    path: "clickordeliver",
+    element: <ClickOrDeliver />,
+  },
+
   {
     path: "livraison",
     element: <Livraison />,
@@ -24,6 +33,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-
-  <RouterProvider router={router} />
+  <Layout>
+    <RouterProvider router={router} />
+  </Layout>
 );
+
+
