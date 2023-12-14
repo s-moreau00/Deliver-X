@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../Navbar/Navbar.jsx';
+
 
 export default function Header() {
     return (
-        <header>Header</header>
+        <header>
+            <Navbar />
+
+        </header>
     )
 }
