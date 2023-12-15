@@ -9,19 +9,16 @@ import Cities from "./components/Cities/Cities";
 import ClickOrDeliver from "./components/ClickOrDeliver/ClickOrDeliver";
 import Livraison from "./components/Livraison/Livraison";
 import ListRestaurants from "./components/ListRestaurants/ListRestaurants";
-
+import Logo from "./components/Logo/Logo.jsx";
 
 function App() {
   const [data, setData] = useState([]);
   const { lat, long } = useGeoLocation();
-  const [restaurant, setRestaurant] = useState([]);
+  const [restaurant] = useState(restaurants);
 
   // const [counter, setCounter] = useState(5);
 
   useEffect(() => {
-
-    setRestaurant(restaurants);
-
     fetch(`https://api-adresse.data.gouv.fr/reverse/?lon=${long}&lat=${lat}`)
       .then((res) => res.json())
       .then((res) => setData(res))
@@ -37,9 +34,10 @@ function App() {
         <section>
           <h1>Prêt à commander ton burger ?</h1>
           <ClickOrDeliver></ClickOrDeliver>
-          <Cities></Cities>
+          <Cities restaurant={restaurant}></Cities>
           <Livraison></Livraison>
           <ListRestaurants></ListRestaurants>
+          <Logo />
         </section>
 
 
