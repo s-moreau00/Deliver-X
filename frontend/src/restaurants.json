@@ -34,7 +34,28 @@
         "id": 5,
         "departement": 95,
         "cp": 95001,
-        "ville": "",
+        "ville": "SOON",
+        "nom": ""
+    },
+    {
+        "id": 6,
+        "departement": 13,
+        "cp": 13001,
+        "ville": "Marseille",
+        "nom": ""
+    },
+    {
+        "id": 7,
+        "departement": 34,
+        "cp": 34400,
+        "ville": "Montpellier",
+        "nom": ""
+    },
+    {
+        "id": 8,
+        "departement": 34,
+        "cp": 34400,
+        "ville": "Toulouse",
         "nom": ""
     }
 ]

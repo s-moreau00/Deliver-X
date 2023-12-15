@@ -6,10 +6,10 @@ export default function ClickOrDeliver() {
         <>
             <h2>Tu es plutôt...</h2>
             <section className='btnClickDeliver'>
-                <button>
+                <button className='btn-cod'>
                     Click and Collect
                 </button>
-                <button>
+                <button className='btn-cod'>
                     Livraison
                 </button>
             </section>
