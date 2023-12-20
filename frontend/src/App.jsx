@@ -12,7 +12,6 @@ import ListRestaurants from "./components/ListRestaurants/ListRestaurants";
 
 import Logo from "./components/Logo/Logo.jsx";
 
-
 function App() {
   const [data, setData] = useState([]);
   const { lat, long } = useGeoLocation();
@@ -21,9 +20,6 @@ function App() {
   // const [counter, setCounter] = useState(5);
 
   useEffect(() => {
-
-    setRestaurant(restaurants);
-
     fetch(`https://api-adresse.data.gouv.fr/reverse/?lon=${long}&lat=${lat}`)
       .then((res) => res.json())
       .then((res) => setData(res))
