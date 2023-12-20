@@ -1,9 +1,9 @@
 :root {
-  --main-color: #625FFF;
-  --second-color: #FFB800;
-  --lightmain-color: #AFADFF;
+  --main-color: #625fff;
+  --second-color: #ffb800;
+  --lightmain-color: #afadff;
   --dark-color: #383838;
-  --light-color: #F8F8F8;
+  --light-color: #f8f8f8;
   --fonts: "venice-blvd";
 }
 
@@ -30,11 +30,9 @@ main {
   height: calc(100vh - 160px);
   background-color: var(--main-color);
   padding: 1rem;
-
-
 }
 
-main>section>* {
+main > section > * {
   padding: 0.3rem 0;
 }
 
@@ -48,9 +46,7 @@ button {
   width: 161px;
   height: 30px;
   flex-shrink: 0;
-
 }
-
 
 /*Pour afficher / cacher les composants */
 .hide {
@@ -60,9 +56,6 @@ button {
 .show {
   display: initial;
 }
-
-
-
 
 /* @keyframes App-logo-spin {
   from {

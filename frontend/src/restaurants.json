@@ -1,40 +1,40 @@
 [
-    {
-        "id": 1,
-        "departement": 69,
-        "cp": 69001,
-        "ville": "Lyon",
-        "arrondissement": 1,
-        "nom": "Bellecour"
-    },
-    {
-        "id": 2,
-        "departement": 69,
-        "cp": 69007,
-        "ville": "Lyon",
-        "arrondissement": 7,
-        "nom": "Jean Macé"
-    },
-    {
-        "id": 3,
-        "departement": 38,
-        "cp": 38000,
-        "ville": "Grenoble",
-        "nom": "Grenoble"
-    },
-    {
-        "id": 4,
-        "departement": 75,
-        "cp": 75018,
-        "ville": "Paris",
-        "arrondissement": 18,
-        "nom": "Montmartre"
-    },
-    {
-        "id": 5,
-        "departement": 95,
-        "cp": 95001,
-        "ville": "",
-        "nom": ""
-    }
+  {
+    "id": 1,
+    "departement": 69,
+    "cp": 69001,
+    "ville": "Lyon",
+    "arrondissement": 1,
+    "nom": "Bellecour"
+  },
+  {
+    "id": 2,
+    "departement": 69,
+    "cp": 69007,
+    "ville": "Lyon",
+    "arrondissement": 7,
+    "nom": "Jean Macé"
+  },
+  {
+    "id": 3,
+    "departement": 38,
+    "cp": 38000,
+    "ville": "Grenoble",
+    "nom": "Grenoble"
+  },
+  {
+    "id": 4,
+    "departement": 75,
+    "cp": 75018,
+    "ville": "Paris",
+    "arrondissement": 18,
+    "nom": "Montmartre"
+  },
+  {
+    "id": 5,
+    "departement": 95,
+    "cp": 95001,
+    "ville": "",
+    "nom": ""
+  }
 ]
