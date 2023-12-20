@@ -1,13 +1,13 @@
 .title-where {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .btn-cities {
-    color: var(--light-color);
-    border-radius: 10px;
-    background: #C6C5FF;
-    font-size: 13px;
-    padding: 5px 30px;
-    margin: 3px;
-    border: 2px;
+  color: var(--light-color);
+  border-radius: 10px;
+  background: #c6c5ff;
+  font-size: 13px;
+  padding: 5px 30px;
+  margin: 3px;
+  border: 2px;
 }

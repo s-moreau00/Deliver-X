@@ -6,7 +6,7 @@
 /* eslint-disable import/no-duplicates */
 
 import { useState } from "react";
-import "./listRestaurants.css";
+import "./ListRestaurants.css";
 
 const data = [
   { id: 0, label: "Lyon Bellecour" },
