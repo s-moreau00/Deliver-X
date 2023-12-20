@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import "./Navbar.css";
-import close from "../../../public/icones/close-lg-svgrepo-com.svg";
-import menuBurger from "../../../public/icones/hamburger-menu-svgrepo-com.svg";
-import cart from "../../../public/icones/cart-large-2-svgrepo-com.svg";
-import logoSmall from "../../../public/logoP2/LogoP2_small.png";
+import close from "../../assets/icones/close-lg-svgrepo-com.svg";
+import menuBurger from "../../assets/icones/hamburger-menu-svgrepo-com.svg";
+import cart from "../../assets/icones/cart-large-2-svgrepo-com.svg";
+import logoSmall from "../../assets/logoP2/LogoP2_small.png";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState();
