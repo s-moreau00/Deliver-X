@@ -8,7 +8,6 @@ import Livraison from "./components/Livraison/Livraison";
 import App from "./App";
 import Layout from "./components/layout/Layout";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,5 +36,3 @@ root.render(
     <RouterProvider router={router} />
   </Layout>
 );
-
-

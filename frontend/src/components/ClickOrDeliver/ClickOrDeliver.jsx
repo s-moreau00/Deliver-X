@@ -1,7 +1,8 @@
-import React from 'react';
-import './ClickOrDeliver.css';
+import React from "react";
+import "./ClickOrDeliver.css";
 
 export default function ClickOrDeliver() {
+
     return (
         <>
             <h2>Tu es plutôt...</h2>
@@ -15,6 +16,5 @@ export default function ClickOrDeliver() {
             </section>
         </>
     )
+
 }
-
-

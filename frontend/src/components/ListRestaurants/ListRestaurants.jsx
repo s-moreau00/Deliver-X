@@ -1,21 +1,24 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable radix */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable import/no-duplicates */
+
 import { useState } from "react";
-import "./ListRestaurants.css";
+import "./listRestaurants.css";
 
 const data = [
   { id: 0, label: "Lyon Bellecour" },
   { id: 1, label: "Lyon Jean Macé" },
   { id: 2, label: "Lyon Debourg" },
 ];
+
 export default function ListRestaurants() {
   // state pour afficher et cacher la liste
   const [isOpen, setOpen] = useState(false);
-
   // state des items de la liste
   const [items] = useState(data);
-
   // state de choix de user
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -48,20 +51,20 @@ export default function ListRestaurants() {
             strokeWidth="1.32"
             className={` icon ${isOpen && "open"}`}
           >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
               strokeLinecap="round"
               strokeLinejoin="round"
-            />
+            ></g>
             <g id="SVGRepo_iconCarrier">
-              <rect width="24" height="24" fill="#F8F8F8" />
+              <rect width="24" height="24" fill="#F8F8F8"></rect>
               <path
                 d="M9.5 7L14.5 12L9.5 17"
                 stroke="#383838"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              />
+              ></path>
             </g>
           </svg>
         </div>
