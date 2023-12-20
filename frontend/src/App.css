@@ -26,8 +26,12 @@ footer {
   background-color: var(--lightmain-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 main {
-  height: calc(100vh - 160px);
+  min-height: calc(100vh - 80px);
   background-color: var(--main-color);
   padding: 1rem;
 }
@@ -65,3 +69,10 @@ main > section > * {
     transform: rotate(360deg);
   }
 } */
+
+/* media queries version Desktop */
+@media(min-width : 750px){
+  main {
+  padding: 5% 10%;
+}
+}

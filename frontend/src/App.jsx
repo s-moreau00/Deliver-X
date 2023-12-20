@@ -1,16 +1,15 @@
-import Counter from "./components/Counter";
 import "./App.css";
-import Layout from "./components/layout/Layout";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useGeoLocation } from "./Hooks/useLocation";
 import restaurants from "./restaurants.json";
-import { Link } from "react-router-dom";
-import Cities from "./components/Cities/Cities";
+import Layout from "./components/layout/Layout";
 import ClickOrDeliver from "./components/ClickOrDeliver/ClickOrDeliver";
+import Cities from "./components/Cities/Cities";
 import Livraison from "./components/Livraison/Livraison";
 import ListRestaurants from "./components/ListRestaurants/ListRestaurants";
-
 import Logo from "./components/Logo/Logo.jsx";
+import Counter from "./components/Counter";
 
 function App() {
   const [data, setData] = useState([]);
