@@ -109,7 +109,7 @@ nav > ul > li > img {
   nav > ul > li:last-child {
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   }
-    /* .blockLogo {
+  /* .blockLogo {
     padding-left:10%;
   }
   nav > div:nth-of-type(2) {
@@ -149,8 +149,8 @@ nav > ul > li > img {
     vertical-align: middle;
     padding: 0 0 10px 5px;
   }
-   .blockLogo {
-    padding-left:10%;
+  .blockLogo {
+    padding-left: 10%;
   }
 }
 /*smartphone*/
@@ -159,11 +159,10 @@ nav > ul > li > img {
        display:none;
    }
 } */
-@media(min-width : 750px) and (max-width: 850px){
+/* @media(min-width : 750px) and (max-width: 850px){
    .blockLogo {
     padding-left:10%;
   }
   nav > div:nth-of-type(2) {
   padding-right: 10%;
-}
-}
+} }*/
