@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "type": "burger",
+      "name": "Paris",
+      "prix": "9.99€",
+      "img": "burger-paris.png"
+    },
+    {
+      "id": 2,
+      "type": "burger",
+      "name": "Rome",
+      "prix": "6.99€",
+      "img": "burger-rome.png"
+    },
+    {
+      "id": 3,
+      "type": "burger",
+      "name": "Berlin",
+      "prix": "7.49€",
+      "img": "burger-berlin.png"
+    },
+    {
+      "id": 4,
+      "type": "burger",
+      "name": "Madrid",
+      "prix": "8.99€",
+      "img": "burger-madrid.png"
+    },
+    {
+      "id": 5,
+      "type": "burger",
+      "name": "Athens",
+      "prix": "6.49€",
+      "img": "burger-athens.png"
+    },
+    {
+      "id": 6,
+      "type": "burger",
+      "name": "Lisbon",
+      "prix": "7.99€",
+      "img": "burger-lisbon.png"
+    },
+    {
+      "id": 7,
+      "type": "burger",
+      "name": "Amsterdam",
+      "prix": "8.49€",
+      "img": "./src/assets/img-menu/burger-amsterdam.png"
+    },
+    {
+      "id": 8,
+      "type": "burger",
+      "name": "Vienna",
+      "prix": "9.99€",
+      "img": "burger-vienna.png"
+    },
+    {
+      "id": 9,
+      "type": "mealDeal",
+      "name": "Meal Deal Paris",
+      "burger": "Paris",
+      "drink": "New York Soda",
+      "fries": true,
+      "prix": "12.99€",
+      "img": "meal-deal-paris.png"
+    },
+    {
+      "id": 10,
+      "type": "mealDeal",
+      "name": "Meal Deal Rome",
+      "burger": "Rome",
+      "drink": "Los Angeles Soda",
+      "fries": true,
+      "prix": "13.99€",
+      "img": "meal-deal-rome.png"
+    },
+    {
+      "id": 11,
+      "type": "mealDeal",
+      "name": "Meal Deal Berlin",
+      "burger": "Berlin",
+      "drink": "Chicago Soda",
+      "fries": true,
+      "prix": "14.49€",
+      "img": "meal-deal-berlin.png"
+    },
+    {
+      "id": 12,
+      "type": "mealDeal",
+      "name": "Meal Deal Madrid",
+      "burger": "Madrid",
+      "drink": "Houston Soda",
+      "fries": true,
+      "prix": "15.99€",
+      "img": "meal-deal-madrid.png"
+    },
+    {
+      "id": 13,
+      "type": "mealDeal",
+      "name": "Meal Deal Athens",
+      "burger": "Athens",
+      "drink": "Miami Soda",
+      "fries": true,
+      "prix": "13.49€",
+      "img": "meal-deal-athens.png"
+    },
+    {
+      "id": 14,
+      "type": "mealDeal",
+      "name": "Meal Deal Lisbon",
+      "burger": "Lisbon",
+      "drink": "San Francisco Soda",
+      "fries": true,
+      "prix": "14.99€",
+      "img": "meal-deal-lisbon.png"
+    },
+    {
+      "id": 15,
+      "type": "mealDeal",
+      "name": "Meal Deal Amsterdam",
+      "burger": "Amsterdam",
+      "drink": "Las Vegas Soda",
+      "fries": true,
+      "prix": "15.49€",
+      "img": "meal-deal-amsterdam.png"
+    },
+    {
+      "id": 16,
+      "type": "mealDeal",
+      "name": "Meal Deal Vienna",
+      "burger": "Vienna",
+      "drink": "Seattle Soda",
+      "fries": true,
+      "prix": "16.99€",
+      "img": "meal-deal-vienna.png"
+    },
+    {
+      "id": 17,
+      "type": "salad",
+      "name": "Chicken Salad",
+      "prix": "9.99€",
+      "img": "chicken-salad.jpeg"
+    },
+    {
+      "id": 18,
+      "type": "salad",
+      "name": "Caesar Salad",
+      "prix": "8.99€",
+      "img": "caesar-salad.jpeg"
+    },
+    {
+      "id": 19,
+      "type": "salad",
+      "name": "Greek Salad",
+      "prix": "7.99€",
+      "img": "greek-salad.jpeg"
+    },
+    {
+      "id": 20,
+      "type": "salad",
+      "name": "Vegetarian Salad",
+      "prix": "6.99€",
+      "img": "vegetarian-salad.jpeg"
+    },
+    {
+      "id": 21,
+      "type": "drink",
+      "name": "New York Milkshake",
+      "size": "Small",
+      "prix": "1.99€",
+      "img": "soda1.webp"
+    },
+    {
+      "id": 22,
+      "type": "drink",
+      "name": "Los Angeles Milkshake",
+      "size": "Small",
+      "prix": "1.99€",
+      "img": "soda2.webp"
+    },
+    {
+      "id": 23,
+      "type": "drink",
+      "name": "Chicago Milkshake",
+      "size": "Medium",
+      "prix": "2.49€",
+      "img": "soda3.webp"
+    },
+    {
+      "id": 24,
+      "type": "drink",
+      "name": "Houston Milkshake",
+      "size": "Medium",
+      "prix": "2.49€",
+      "img": "soda4.webp"
+    }
+  ]
+}
