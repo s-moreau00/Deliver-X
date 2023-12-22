@@ -1,6 +1,8 @@
 :root {
   --main-color: #625fff;
   --second-color: #ffb800;
+  --tertiary-color: #ff5634;
+  --tertiary-light: #fff1cd;
   --lightmain-color: #afadff;
   --dark-color: #383838;
   --light-color: #f8f8f8;
@@ -13,6 +15,7 @@
   padding: 0;
   font-family: var(--fonts);
   color: var(--light-color);
+  /* transition: all 0.3s ease-in-out; */
 }
 
 header,
@@ -40,14 +43,21 @@ main > section > * {
   padding: 0.3rem 0;
 }
 
+.main-App-h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
 .btn-cod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--second-color);
   color: var(--light-color);
-  font-size: 13px;
+  font-size: 1rem;
   border-radius: 12px;
   border: 0px;
   padding: 5px 30px;
-  width: 161px;
+  width: 180px;
   height: 30px;
   flex-shrink: 0;
 }

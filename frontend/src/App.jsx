@@ -2,9 +2,6 @@ import "./App.css";
 import { useState } from "react";
 import restaurants from "./restaurants.json";
 import ClickOrDeliver from "./components/ClickOrDeliver/ClickOrDeliver";
-import Cities from "./components/Cities/Cities";
-import Livraison from "./components/Livraison/Livraison";
-import ListRestaurants from "./components/ListRestaurants/ListRestaurants";
 import Logo from "./components/Logo/Logo";
 
 function App() {
@@ -13,11 +10,8 @@ function App() {
   return (
     <main className="main-App">
       <section className="main-App-section">
-        <h1>Prêt à commander ton burger ?</h1>
-        <ClickOrDeliver />
-        <Cities restaurant={restaurant} />
-        <Livraison />
-        <ListRestaurants />
+        <h1 className="main-App-h1">Prêt à commander ton burger&nbsp;?</h1>
+        <ClickOrDeliver restaurant={restaurant} />
       </section>
       <Logo />
     </main>

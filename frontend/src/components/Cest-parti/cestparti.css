@@ -1,0 +1,23 @@
+.containerLetsGo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btnLetsGo {
+  display: flex;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 0px;
+  padding: 5px 30px;
+  height: 30px;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.hideBtnLetsGo {
+  display: none;
+}
