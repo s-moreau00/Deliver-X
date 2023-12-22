@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable radix */
@@ -7,6 +8,7 @@
 
 import { useState } from "react";
 import "./ListRestaurants.css";
+import CestParti from "../Cest-parti/CestParti";
 
 const data = [
   { id: 0, label: "Lyon Bellecour" },
@@ -14,7 +16,7 @@ const data = [
   { id: 2, label: "Lyon Debourg" },
 ];
 
-export default function ListRestaurants() {
+export default function ListRestaurants({ clickCities }) {
   // state pour afficher et cacher la liste
   const [isOpen, setOpen] = useState(false);
   // state des items de la liste
@@ -25,17 +27,24 @@ export default function ListRestaurants() {
   // fonction afficher/cacher la liste
   const toggleDropdown = () => setOpen(!isOpen);
 
+  // state user a fait un choix ou non
+  // transmis en props à CestParti.jsx
+  const [selected, setSelected] = useState(false);
+
   // fonction pour valider le choix de user
   const handleItemClick = (id) => {
     setSelectedItem((prevSelectedItem) =>
       prevSelectedItem === id ? null : id
     );
     setOpen(false);
+    setSelected(!selected);
   };
 
   return (
-    <>
-      <h1>Nos restaurants à (ville sélectionnée) :</h1>
+    <div className={clickCities ? "showResto" : "hideResto"}>
+      <h1 className="listRestoTitle">
+        Nos restaurants à (ville sélectionnée) :
+      </h1>
       <div className="dropdown">
         <div className="dropdown-header" onClick={toggleDropdown}>
           {selectedItem
@@ -47,7 +56,7 @@ export default function ListRestaurants() {
             viewBox="0 0 24.00 24.00"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            stroke="#F8F8F8"
+            stroke="none"
             strokeWidth="1.32"
             className={` icon ${isOpen && "open"}`}
           >
@@ -58,10 +67,10 @@ export default function ListRestaurants() {
               strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
-              <rect width="24" height="24" fill="#F8F8F8"></rect>
+              <rect width="24" height="24" fill="var(--light-color)"></rect>
               <path
                 d="M9.5 7L14.5 12L9.5 17"
-                stroke="#383838"
+                stroke="var(--dark-color)"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               ></path>
@@ -82,6 +91,7 @@ export default function ListRestaurants() {
           ))}
         </div>
       </div>
-    </>
+      <CestParti selected={selected} />
+    </div>
   );
 }

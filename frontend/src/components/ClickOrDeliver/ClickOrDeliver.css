@@ -2,3 +2,17 @@
   display: flex;
   gap: 10px;
 }
+
+.btn-cod:hover {
+  background-color: var(--tertiary-light);
+  color: var(--second-color);
+}
+
+.btn-cod:active {
+  outline: 1px solid var(--tertiary-light);
+  outline-offset: 5px;
+}
+
+.deliverH2 {
+  padding: 2rem 0 0.5rem 0;
+}
