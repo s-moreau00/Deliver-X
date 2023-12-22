@@ -2,199 +2,171 @@
   "items": [
     {
       "id": 1,
-      "type": "burger",
+      "type": "Burger",
       "name": "Paris",
       "prix": "9.99€",
-      "img": "burger-paris.png"
+      "img": "./src/assets/img-menu/burger-paris.png"
     },
     {
       "id": 2,
-      "type": "burger",
+      "type": "Burger",
       "name": "Rome",
       "prix": "6.99€",
-      "img": "burger-rome.png"
+      "img": "./src/assets/img-menu/burger-rome.png"
     },
     {
       "id": 3,
-      "type": "burger",
+      "type": "Burger",
       "name": "Berlin",
       "prix": "7.49€",
-      "img": "burger-berlin.png"
+      "img": "./src/assets/img-menu/burger-berlin.png"
     },
     {
       "id": 4,
-      "type": "burger",
+      "type": "Burger",
       "name": "Madrid",
       "prix": "8.99€",
-      "img": "burger-madrid.png"
+      "img": "./src/assets/img-menu/burger-madrid.png"
     },
     {
       "id": 5,
-      "type": "burger",
+      "type": "Burger",
       "name": "Athens",
       "prix": "6.49€",
-      "img": "burger-athens.png"
+      "img": "./src/assets/img-menu/burger-athens.png"
     },
     {
       "id": 6,
       "type": "burger",
       "name": "Lisbon",
       "prix": "7.99€",
-      "img": "burger-lisbon.png"
+      "img": "./src/assets/img-menu/burger-lisbon.png"
     },
     {
       "id": 7,
-      "type": "burger",
+      "type": "Burger",
       "name": "Amsterdam",
       "prix": "8.49€",
       "img": "./src/assets/img-menu/burger-amsterdam.png"
     },
     {
       "id": 8,
-      "type": "burger",
+      "type": "Burger",
       "name": "Vienna",
       "prix": "9.99€",
-      "img": "burger-vienna.png"
+      "img": "./src/assets/img-menu/burger-vienna.png"
     },
     {
       "id": 9,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Paris",
-      "burger": "Paris",
-      "drink": "New York Soda",
-      "fries": true,
       "prix": "12.99€",
-      "img": "meal-deal-paris.png"
+      "img": "./src/assets/img-menu/meal_deal_paris.png"
     },
     {
       "id": 10,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Rome",
-      "burger": "Rome",
-      "drink": "Los Angeles Soda",
-      "fries": true,
       "prix": "13.99€",
-      "img": "meal-deal-rome.png"
+      "img": "./src/assets/img-menu/meal-deal-rome.png"
     },
     {
       "id": 11,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Berlin",
-      "burger": "Berlin",
-      "drink": "Chicago Soda",
-      "fries": true,
       "prix": "14.49€",
-      "img": "meal-deal-berlin.png"
+      "img": "./src/assets/img-menu/meal-deal-berlin.png"
     },
     {
       "id": 12,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Madrid",
-      "burger": "Madrid",
-      "drink": "Houston Soda",
-      "fries": true,
       "prix": "15.99€",
-      "img": "meal-deal-madrid.png"
+      "img": "./src/assets/img-menu/meal-deal-madrid.png"
     },
     {
       "id": 13,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Athens",
-      "burger": "Athens",
-      "drink": "Miami Soda",
-      "fries": true,
       "prix": "13.49€",
-      "img": "meal-deal-athens.png"
+      "img": "./src/assets/img-menu/meal-deal-athens.png"
     },
     {
       "id": 14,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Lisbon",
-      "burger": "Lisbon",
-      "drink": "San Francisco Soda",
-      "fries": true,
       "prix": "14.99€",
-      "img": "meal-deal-lisbon.png"
+      "img": "./src/assets/img-menu/meal-deal-lisbon.png"
     },
     {
       "id": 15,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Amsterdam",
-      "burger": "Amsterdam",
-      "drink": "Las Vegas Soda",
-      "fries": true,
       "prix": "15.49€",
-      "img": "meal-deal-amsterdam.png"
+      "img": "./src/assets/img-menu/meal-deal-amsterdam.png"
     },
     {
       "id": 16,
-      "type": "mealDeal",
+      "type": "Meal Deal",
       "name": "Meal Deal Vienna",
-      "burger": "Vienna",
-      "drink": "Seattle Soda",
-      "fries": true,
       "prix": "16.99€",
-      "img": "meal-deal-vienna.png"
+      "img": "./src/assets/img-menu/meal-deal-vienna.png"
     },
     {
       "id": 17,
-      "type": "salad",
+      "type": "Salad",
       "name": "Chicken Salad",
       "prix": "9.99€",
-      "img": "chicken-salad.jpeg"
+      "img": "./src/assets/img-menu/chicken_salad.jpeg"
     },
     {
       "id": 18,
-      "type": "salad",
+      "type": "Salad",
       "name": "Caesar Salad",
       "prix": "8.99€",
-      "img": "caesar-salad.jpeg"
+      "img": "./src/assets/img-menu/caesar-salad.jpeg"
     },
     {
       "id": 19,
-      "type": "salad",
+      "type": "Salad",
       "name": "Greek Salad",
       "prix": "7.99€",
-      "img": "greek-salad.jpeg"
+      "img": "./src/assets/img-menu/greek-salad.jpeg"
     },
     {
       "id": 20,
-      "type": "salad",
+      "type": "Salad",
       "name": "Vegetarian Salad",
       "prix": "6.99€",
-      "img": "vegetarian-salad.jpeg"
+      "img": "./src/assets/img-menu/vegetarian-salad.jpeg"
     },
     {
       "id": 21,
-      "type": "drink",
+      "type": "Boisson",
       "name": "New York Milkshake",
-      "size": "Small",
       "prix": "1.99€",
-      "img": "soda1.webp"
+      "img": "./src/assets/img-menu/soda1.webp"
     },
     {
       "id": 22,
-      "type": "drink",
+      "type": "Boisson",
       "name": "Los Angeles Milkshake",
-      "size": "Small",
       "prix": "1.99€",
-      "img": "soda2.webp"
+      "img": "./src/assets/img-menu/soda2.webp"
     },
     {
       "id": 23,
-      "type": "drink",
+      "type": "Boisson",
       "name": "Chicago Milkshake",
-      "size": "Medium",
       "prix": "2.49€",
-      "img": "soda3.webp"
+      "img": "./src/assets/img-menu/soda3.webp"
     },
     {
       "id": 24,
-      "type": "drink",
+      "type": "Boisson",
       "name": "Houston Milkshake",
-      "size": "Medium",
       "prix": "2.49€",
-      "img": "soda4.webp"
+      "img": "./src/assets/img-menu/soda4.webp"
     }
   ]
 }

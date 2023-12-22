@@ -6,6 +6,7 @@ nav {
   align-items: center;
   position: fixed;
   background-color: var(--main-color);
+  z-index: 100;
 }
 /* z-index positione l'élément au dessus des autres élèments,
 plus le z-index est élevé, plus l'élément ciblé se place au dessus des autres */
