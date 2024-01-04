@@ -5,26 +5,59 @@ import menuItems from "../../../../menuItems.json";
 import "./card.css";
 
 export default function Card() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [{ items }] = useState(menuItems);
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+  // new Set() élimine automatiquement les doublons, laissant uniquement les catégories uniques.
+  const uniqueCategories = Array.from(new Set(items.map((item) => item.type)));
+
+  const filteredItems =
+    selectedCategory === "All"
+      ? items
+      : items.filter((item) => item.type === selectedCategory);
   return (
-    <main className="cards-all">
-      {items.map((item) => (
-        <div className="cards" key={item.id}>
-          <div className="card-img">
-            <img src={item.img} alt={item.name} />
-          </div>
-          <div className="info-product">
-            <div className="name-and-price">
-              <div className="card-name">{item.name}</div>
-              <span className="card-price">{item.prix}</span>
+    <div>
+      <div className="category-filter">
+        <button
+          className="button-filter"
+          type="button"
+          onClick={() => handleCategoryChange("All")}
+        >
+          Tous
+        </button>
+        {uniqueCategories.map((category) => (
+          <button
+            className="button-filter"
+            type="button"
+            key={category}
+            onClick={() => handleCategoryChange(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
+      <main className="cards-all">
+        {filteredItems.map((item) => (
+          <div className="cards" key={item.id}>
+            <div className="card-img">
+              <img src={item.img} alt={item.name} />
             </div>
-            <button className="button" type="submit">
-              Ajouter au panier
-            </button>
+            <div className="info-product">
+              <div className="name-and-price">
+                <div className="card-name">{item.name}</div>
+                <span className="card-price">{item.prix}</span>
+              </div>
+              <button className="button" type="submit">
+                Ajouter au panier
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
-    </main>
+        ))}
+      </main>
+    </div>
   );
 }
 

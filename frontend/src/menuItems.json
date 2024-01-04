@@ -2,56 +2,56 @@
   "items": [
     {
       "id": 1,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Paris",
       "prix": "9.99€",
       "img": "./src/assets/img-menu/burger-paris.png"
     },
     {
       "id": 2,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Rome",
       "prix": "6.99€",
       "img": "./src/assets/img-menu/burger-rome.png"
     },
     {
       "id": 3,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Berlin",
       "prix": "7.49€",
       "img": "./src/assets/img-menu/burger-berlin.png"
     },
     {
       "id": 4,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Madrid",
       "prix": "8.99€",
       "img": "./src/assets/img-menu/burger-madrid.png"
     },
     {
       "id": 5,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Athens",
       "prix": "6.49€",
       "img": "./src/assets/img-menu/burger-athens.png"
     },
     {
       "id": 6,
-      "type": "burger",
+      "type": "Burgers",
       "name": "Lisbon",
       "prix": "7.99€",
       "img": "./src/assets/img-menu/burger-lisbon.png"
     },
     {
       "id": 7,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Amsterdam",
       "prix": "8.49€",
       "img": "./src/assets/img-menu/burger-amsterdam.png"
     },
     {
       "id": 8,
-      "type": "Burger",
+      "type": "Burgers",
       "name": "Vienna",
       "prix": "9.99€",
       "img": "./src/assets/img-menu/burger-vienna.png"
@@ -114,56 +114,56 @@
     },
     {
       "id": 17,
-      "type": "Salad",
+      "type": "Salades",
       "name": "Chicken Salad",
       "prix": "9.99€",
       "img": "./src/assets/img-menu/chicken_salad.jpeg"
     },
     {
       "id": 18,
-      "type": "Salad",
+      "type": "Salades",
       "name": "Caesar Salad",
       "prix": "8.99€",
       "img": "./src/assets/img-menu/caesar-salad.jpeg"
     },
     {
       "id": 19,
-      "type": "Salad",
+      "type": "Salades",
       "name": "Greek Salad",
       "prix": "7.99€",
       "img": "./src/assets/img-menu/greek-salad.jpeg"
     },
     {
       "id": 20,
-      "type": "Salad",
+      "type": "Salades",
       "name": "Vegetarian Salad",
       "prix": "6.99€",
       "img": "./src/assets/img-menu/vegetarian-salad.jpeg"
     },
     {
       "id": 21,
-      "type": "Boisson",
+      "type": "Boissons",
       "name": "New York Milkshake",
       "prix": "1.99€",
       "img": "./src/assets/img-menu/soda1.webp"
     },
     {
       "id": 22,
-      "type": "Boisson",
+      "type": "Boissons",
       "name": "Los Angeles Milkshake",
       "prix": "1.99€",
       "img": "./src/assets/img-menu/soda2.webp"
     },
     {
       "id": 23,
-      "type": "Boisson",
+      "type": "Boissons",
       "name": "Chicago Milkshake",
       "prix": "2.49€",
       "img": "./src/assets/img-menu/soda3.webp"
     },
     {
       "id": 24,
-      "type": "Boisson",
+      "type": "Boissons",
       "name": "Houston Milkshake",
       "prix": "2.49€",
       "img": "./src/assets/img-menu/soda4.webp"
