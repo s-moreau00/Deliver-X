@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./Cities.css";
 import ListRestaurants from "../ListRestaurants/ListRestaurants";
 
-export default function ClickCollect({ restaurant, clickCollect, deliver }) {
+export default function ClickCollect({ restaurant, clickCollect }) {
   const restaurantsFiltred = [];
   restaurant.map((rest) => {
     const isExist = restaurantsFiltred.includes(rest.ville);
@@ -13,11 +13,11 @@ export default function ClickCollect({ restaurant, clickCollect, deliver }) {
     return restaurantsFiltred;
   });
 
-  // state clic sur bouton cities
+  // state clic sur bouton cities et set le nom de la ville choisie
   const [clickCities, setClickCities] = useState(false);
 
-  const handleClickCities = () => {
-    setClickCities(!clickCities);
+  const handleClickCities = (e) => {
+    setClickCities(e.target.name);
   };
 
   return (
@@ -37,7 +37,7 @@ export default function ClickCollect({ restaurant, clickCollect, deliver }) {
           </button>
         ))}{" "}
       </div>
-      <ListRestaurants clickCities={clickCities} />
+      <ListRestaurants clickCities={clickCities} restaurant={restaurant} />
     </div>
   );
 }

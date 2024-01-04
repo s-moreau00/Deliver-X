@@ -41,95 +41,84 @@
   width: 400px;
   height: 400px;
   border-radius: 40px;
-  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition:
+    box-shadow 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 
 .info-product {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.name-and-price{
-display: flex;
-flex-direction: column;
-
-
+.name-and-price {
+  display: flex;
+  flex-direction: column;
 }
 
-.card-img{
-    border-radius: 50%;
-    
-    
+.card-img {
+  border-radius: 50%;
 }
 
 .card-img img {
-width: 100%;
-height: 80%;
-
+  width: 100%;
+  height: 80%;
 }
 
-
-.card-name,.card-price{
-    color: var(--second-color);
-    font-size: 1.5rem;
-    
-    
+.card-name,
+.card-price {
+  color: var(--second-color);
+  font-size: 1.5rem;
 }
 
-.button{
-font-size: 16px;
-border-style: none;
-border-radius: 10%;
-height: 60px;
-width: 110px;
-color: white;
-background-color:#625fff;
-
+.button {
+  font-size: 16px;
+  border-style: none;
+  border-radius: 10%;
+  height: 60px;
+  width: 110px;
+  color: white;
+  background-color: #625fff;
 }
 
 .button:hover {
   background-color: #afadff;
-  z-index: 99; 
+  z-index: 99;
 }
 
+@media screen and (min-width: 850px) {
+  .cards:hover {
+    box-shadow: 0px 20px 35px rgba(62, 0, 250, 0.756);
+    transform: translateY(-5px);
+  }
 
-@media screen and (min-width: 850px){
-.cards:hover {
-  box-shadow: 0px 20px 35px rgba(62, 0, 250, 0.756);
-  transform: translateY(-5px);
-  
-}
-
-.cards-all{
+  .cards-all {
     gap: 69px;
     padding: 100px 200px;
-    
-}
+  }
 
-.cards{
-  width: 200px;
-  height: 275px;
-  
+  .cards {
+    width: 200px;
+    height: 275px;
+  }
 
-}
+  .card-name,
+  .card-price {
+    font-size: 0.9rem;
+  }
 
-.card-name,.card-price{
-    font-size: 0.9rem; 
-}
-
-.button{
+  .button {
     width: 50%;
     height: 50%;
-}
+  }
 
-.name-and-price{
-justify-content: space-evenly;
+  .name-and-price {
+    justify-content: space-evenly;
+  }
 
-}
-
-.info-product {
-margin: 8px;
-}
+  .info-product {
+    margin: 8px;
+  }
 }
 @media screen and (max-width: 950px){
 .button-filter{
