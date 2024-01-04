@@ -4,18 +4,20 @@ export const useGeoLocation = () => {
   const [location, setLocation] = useState({
     lat: "",
     long: "",
+    accepted: false,
   });
 
   const onSuccess = (location) => {
-    console.log("onSuccess", location.coords.latitude);
+    console.info("onSuccess", location.coords.latitude);
 
     setLocation({
       lat: location.coords.latitude,
       long: location.coords.longitude,
+      accepted: false,
     });
   };
   const onError = (error) => {
-    setLocation({ error });
+    setLocation({ lat: error, long: error, accepted: true });
   };
 
   useEffect(() => {

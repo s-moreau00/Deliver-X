@@ -14,18 +14,19 @@ import Logo from "./components/Logo/Logo.jsx";
 
 function App() {
   const [data, setData] = useState([]);
-  const { lat, long } = useGeoLocation();
+  const { lat, long, accepted } = useGeoLocation();
   const [restaurant] = useState(restaurants);
-
+  console.info("accepted", accepted);
   // const [counter, setCounter] = useState(5);
 
   useEffect(() => {
-    fetch(`https://api-adresse.data.gouv.fr/reverse/?lon=${long}&lat=${lat}`)
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => console.log(err));
+    if (accepted) {
+      fetch(`https://api-adresse.data.gouv.fr/reverse/?lon=${long}&lat=${lat}`)
+        .then((res) => res.json())
+        .then((res) => setData(res))
+        .catch((err) => console.info(err));
+    }
   }, [lat, long]);
-  console.log("data", data);
 
   return (
     <>
@@ -34,7 +35,7 @@ function App() {
           <h1>Prêt à commander ton burger ?</h1>
           <ClickOrDeliver></ClickOrDeliver>
           <Cities restaurant={restaurant}></Cities>
-          <Livraison></Livraison>
+          <Livraison accepted={accepted}></Livraison>
           <ListRestaurants></ListRestaurants>
           <Logo />
         </section>

@@ -2,6 +2,10 @@
   font-size: 15px;
 }
 
+.cities {
+  display: none;
+}
+
 .btn-cities {
   color: var(--light-color);
   border-radius: 10px;

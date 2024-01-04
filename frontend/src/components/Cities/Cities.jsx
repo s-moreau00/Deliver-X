@@ -6,7 +6,7 @@ export default function ClickCollect({ restaurant }) {
     const isExist = restaurantsFiltred.includes(rest.ville);
     if (!isExist) restaurantsFiltred.push(rest.ville);
   });
-  console.log("restaurants.Filtred", restaurantsFiltred);
+  console.info("restaurants.Filtred", restaurantsFiltred);
 
   return (
     <>
