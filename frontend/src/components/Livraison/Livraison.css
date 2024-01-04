@@ -22,3 +22,11 @@ input::placeholder {
   background-color: red;
   font-size: 1rem;
 }
+
+.geoapify-autocomplete-input {
+  color: black;
+}
+
+.geoapify-autocomplete-items {
+  background-color: var(--second-color) !important;
+}
