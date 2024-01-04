@@ -6,6 +6,7 @@ nav {
   align-items: center;
   position: fixed;
   background-color: var(--main-color);
+  z-index: 100;
 }
 /* z-index positione l'élément au dessus des autres élèments,
 plus le z-index est élevé, plus l'élément ciblé se place au dessus des autres */
@@ -65,6 +66,7 @@ nav > ul > li {
   padding: 0.3rem 1.5rem;
   border: 1px solid var(--main-color);
 }
+
 nav > ul > li:hover {
   color: var(--light-color);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -102,12 +104,18 @@ nav > ul > li > img {
   nav > ul > li {
     font-size: 1.5rem;
   }
-  nav > ul > li > img {
+  nav > ul > li > a > img {
     display: none;
   }
   nav > ul > li:last-child {
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   }
+  /* .blockLogo {
+    padding-left:10%;
+  }
+  nav > div:nth-of-type(2) {
+  padding-right: 10%;
+} */
 }
 /* large */
 @media screen and (min-width: 850px) {
@@ -127,7 +135,7 @@ nav > ul > li > img {
     margin: 0;
   }
   nav > div:nth-of-type(2) {
-    padding-right: 1rem;
+    padding-right: 10%;
   }
   .blockLogo > h3 {
     display: none;
@@ -136,11 +144,14 @@ nav > ul > li > img {
     padding: 0.3rem 1.5rem 0 1.5rem;
     border-radius: 25px;
   }
-  nav > ul > li > img {
+  nav > ul > li > a > img {
     width: 50px;
     height: 50px;
     vertical-align: middle;
     padding: 0 0 10px 5px;
+  }
+  .blockLogo {
+    padding-left: 10%;
   }
 }
 /*smartphone*/
@@ -149,3 +160,10 @@ nav > ul > li > img {
        display:none;
    }
 } */
+/* @media(min-width : 750px) and (max-width: 850px){
+   .blockLogo {
+    padding-left:10%;
+  }
+  nav > div:nth-of-type(2) {
+  padding-right: 10%;
+} }*/

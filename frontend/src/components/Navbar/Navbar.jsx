@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import close from "../../assets/icones/close-lg-svgrepo-com.svg";
 import menuBurger from "../../assets/icones/hamburger-menu-svgrepo-com.svg";
@@ -19,12 +19,20 @@ export default function Navbar() {
         <h3>Deliver X</h3>
       </div>
       <ul className={openMenu ? "linkVisible" : ""}>
-        <li>Home</li>
-        <li>Boutique</li>
-        <li>Contact</li>
         <li>
-          Mon Panier
-          <img src={cart} alt="panier" />
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/menu">Menu</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/panier">
+            Mon Panier
+            <img src={cart} alt="panier" />
+          </Link>
         </li>
       </ul>
       <h3 className="titre">Deliver X</h3>
