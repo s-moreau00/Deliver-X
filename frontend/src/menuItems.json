@@ -58,56 +58,56 @@
     },
     {
       "id": 9,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Paris",
       "prix": "12.99€",
       "img": "./src/assets/img-menu/meal_deal_paris.png"
     },
     {
       "id": 10,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Rome",
       "prix": "13.99€",
       "img": "./src/assets/img-menu/meal-deal-rome.png"
     },
     {
       "id": 11,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Berlin",
       "prix": "14.49€",
       "img": "./src/assets/img-menu/meal-deal-berlin.png"
     },
     {
       "id": 12,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Madrid",
       "prix": "15.99€",
       "img": "./src/assets/img-menu/meal-deal-madrid.png"
     },
     {
       "id": 13,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Athens",
       "prix": "13.49€",
       "img": "./src/assets/img-menu/meal-deal-athens.png"
     },
     {
       "id": 14,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Lisbon",
       "prix": "14.99€",
       "img": "./src/assets/img-menu/meal-deal-lisbon.png"
     },
     {
       "id": 15,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Amsterdam",
       "prix": "15.49€",
       "img": "./src/assets/img-menu/meal-deal-amsterdam.png"
     },
     {
       "id": 16,
-      "type": "Meal Deal",
+      "type": "MealDeal",
       "name": "Meal Deal Vienna",
       "prix": "16.99€",
       "img": "./src/assets/img-menu/meal-deal-vienna.png"
