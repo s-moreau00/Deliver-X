@@ -1,7 +1,9 @@
 .btnClickDeliver {
   display: flex;
   gap: 10px;
+  max-width: 42ch;
 }
+
 
 .clickCollect-selected,
 .deliver-selected {
@@ -14,7 +16,6 @@
   border-radius: 12px;
   border: 0px;
   padding: 5px 30px;
-  width: 180px;
   height: 30px;
   flex-shrink: 0;
 }
@@ -25,10 +26,18 @@
 
 .btn-cod:active,
 .deliver-selected:active,
-clickCollect-selected:active {
+.clickCollect-selected:active {
   outline: 1px solid var(--second-light);
   outline-offset: 5px;
 }
+
+.button-width {
+  width: 100%;
+  flex: 1;
+}
+
+
+
 
 .deliverH2 {
   padding: 2rem 0 0.5rem 0;

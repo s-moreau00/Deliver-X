@@ -28,14 +28,20 @@ export default function ClickOrDeliver({ restaurant }) {
       <section className="btnClickDeliver">
         <button
           type="button"
-          className={clickCollect ? "clickCollect-selected" : "btn-cod"}
+          className={
+            clickCollect
+              ? "clickCollect-selected button-width"
+              : "btn-cod button-width"
+          }
           onClick={handleClickCollect}
         >
           Click and Collect
         </button>
         <button
           type="button"
-          className={deliver ? "deliver-selected" : "btn-cod"}
+          className={
+            deliver ? "deliver-selected button-width" : "btn-cod button-width"
+          }
           onClick={handleDeliver}
         >
           Livraison

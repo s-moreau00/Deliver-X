@@ -17,6 +17,7 @@
   font-family: var(--fonts);
   color: var(--light-color);
   /* transition: all 0.3s ease-in-out; */
+  /* transition: all 0.3s ease-in-out; */
 }
 
 header,
@@ -40,6 +41,7 @@ main {
   padding: 1rem;
 }
 
+
 main > section > * {
   padding: 0.3rem 0;
 }
@@ -47,7 +49,9 @@ main > section > * {
 .main-App-h1 {
   font-size: 3rem;
   font-weight: 900;
+  
 }
+
 .btn-cod {
   display: flex;
   align-items: center;
@@ -55,9 +59,11 @@ main > section > * {
   background-color: var(--second-color);
   color: var(--light-color);
   font-size: 1rem;
+  font-size: 1rem;
   border-radius: 12px;
   border: 0px;
   padding: 5px 30px;
+  width: 180px;
   width: 180px;
   height: 30px;
   flex-shrink: 0;
@@ -84,6 +90,11 @@ main > section > * {
     flex: 1.2;
     margin: auto;
   }
+
+    .main-App-h1 {
+      font-size: 5rem;
+  
+    }
   .container-logo {
     order: -1;
     flex: 1;

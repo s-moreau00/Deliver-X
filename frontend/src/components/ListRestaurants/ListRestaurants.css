@@ -11,8 +11,8 @@
 }
 
 .dropdown {
-  width: 300px;
-  border-radius: 10px;
+max-width: 42ch; 
+border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   background-color: var(--light-color);
 }
@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   color: var(--dark-color);
-}
+ }
 
 .dropdown-body {
   padding: 5px;
