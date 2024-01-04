@@ -70,3 +70,18 @@
 .icon.open {
   transform: rotate(90deg);
 }
+
+@media (max-width: 430px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-item:active {
+    background-color: var(--second-color);
+    color: var(--light-color);
+  }
+  .dropdown-item:mouse-over {
+    background-color: var(--second-color);
+    color: var(--light-color);
+  }
+}

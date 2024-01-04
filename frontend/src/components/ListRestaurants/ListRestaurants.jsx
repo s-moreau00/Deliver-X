@@ -10,17 +10,15 @@ import { useState } from "react";
 import "./ListRestaurants.css";
 import CestParti from "../Cest-parti/CestParti";
 
-const data = [
-  { id: 0, label: "Lyon Bellecour" },
-  { id: 1, label: "Lyon Jean Macé" },
-  { id: 2, label: "Lyon Debourg" },
-];
+export default function ListRestaurants({ clickCities, restaurant }) {
+  const restoFiltered = restaurant;
 
-export default function ListRestaurants({ clickCities }) {
   // state pour afficher et cacher la liste
   const [isOpen, setOpen] = useState(false);
+
   // state des items de la liste
-  const [items] = useState(data);
+  const [items] = useState(restoFiltered);
+
   // state de choix de user
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -42,13 +40,11 @@ export default function ListRestaurants({ clickCities }) {
 
   return (
     <div className={clickCities ? "showResto" : "hideResto"}>
-      <h1 className="listRestoTitle">
-        Nos restaurants à (ville sélectionnée) :
-      </h1>
+      <h1 className="listRestoTitle">Nos restaurants à {clickCities} :</h1>
       <div className="dropdown">
         <div className="dropdown-header" onClick={toggleDropdown}>
           {selectedItem
-            ? items.find((item) => item.id === parseInt(selectedItem)).label
+            ? items.find((item) => item.id === parseInt(selectedItem)).nom
             : "Choisis ton restaurant :"}
           <svg
             width="25px"
@@ -79,16 +75,18 @@ export default function ListRestaurants({ clickCities }) {
         </div>
 
         <div className={`dropdown-body ${isOpen && "open"}`}>
-          {items.map((item) => (
-            <div
-              key={item.id}
-              id={item.id}
-              className="dropdown-item"
-              onClick={(e) => handleItemClick(e.target.id)}
-            >
-              {item.label}
-            </div>
-          ))}
+          {items
+            .filter((item) => item.ville === clickCities)
+            .map((item) => (
+              <div
+                key={item.id}
+                id={item.id}
+                className="dropdown-item"
+                onClick={(e) => handleItemClick(e.target.id)}
+              >
+                {item.nom}
+              </div>
+            ))}
         </div>
       </div>
       <CestParti selected={selected} />
