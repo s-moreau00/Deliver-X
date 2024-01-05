@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./ClickOrDeliver.css";
 import Cities from "../Cities/Cities";
-
+import Livraison from "../Livraison/Livraison";
 export default function ClickOrDeliver({ restaurant }) {
   // state bouton Click'n Collect
   const [clickCollect, setClickCollect] = useState(false);
@@ -47,11 +47,8 @@ export default function ClickOrDeliver({ restaurant }) {
           Livraison
         </button>
       </section>
-      <Cities
-        restaurant={restaurant}
-        clickCollect={clickCollect}
-        deliver={deliver}
-      />
+      <Cities restaurant={restaurant} clickCollect={clickCollect} />
+      <Livraison deliver={deliver} />
     </>
   );
 }

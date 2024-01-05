@@ -1,14 +1,13 @@
-.category-filter{
-    display: flex;
-    height: 50px;
-    color: #ffb800;
-    background-color:#625fff;
-   padding-left: 200px;
+.category-filter {
+  display: flex;
+  height: 50px;
+  color: #ffb800;
+  background-color: #625fff;
+  padding-left: 200px;
   padding-right: 200px;
 }
 
-
-.button-filter{
+.button-filter {
   color: white;
   background-color: #625fff;
   border-style: none;
@@ -18,26 +17,22 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .button-filter:hover {
   text-shadow: 0px 20px 35px white;
   transform: translateY(-5px);
-  
 }
 
-.cards-all{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  
-    
+.cards-all {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.cards{
+.cards {
   width: 400px;
   height: 400px;
   border-radius: 40px;
@@ -120,27 +115,19 @@
     margin: 8px;
   }
 }
-@media screen and (max-width: 950px){
-.button-filter{
+@media screen and (max-width: 950px) {
+  .button-filter {
     font-size: 1rem;
-     
-     
-}
+  }
 
-.category-filter{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 25px;
-  
-  
+  .category-filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+  }
 
-}
-
-
-.cards-all{
-
+  .cards-all {
     padding: 100px 200px;
-    
-}
+  }
 }

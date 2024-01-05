@@ -4,7 +4,6 @@
   max-width: 42ch;
 }
 
-
 .clickCollect-selected,
 .deliver-selected {
   display: flex;
@@ -35,9 +34,6 @@
   width: 100%;
   flex: 1;
 }
-
-
-
 
 .deliverH2 {
   padding: 2rem 0 0.5rem 0;
