@@ -10,14 +10,15 @@ import Layout from "./components/layout/Layout";
 import Menu from "./components/Menu/Menu";
 import Contact from "./components/Contact/Contact";
 import Panier from "./components/Panier/Panier";
+import NotFound from "./components/NotFound/NotFound";
 
-const AppLayout = () => {
+function AppLayout() {
   return (
     <Layout>
       <Outlet />
     </Layout>
   );
-};
+}
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/panier",
         element: <Panier />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
