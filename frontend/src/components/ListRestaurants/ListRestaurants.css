@@ -11,7 +11,7 @@
 }
 
 .dropdown {
-  width: 300px;
+  max-width: 42ch;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   background-color: var(--light-color);
@@ -69,4 +69,19 @@
 
 .icon.open {
   transform: rotate(90deg);
+}
+
+@media (max-width: 430px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-item:active {
+    background-color: var(--second-color);
+    color: var(--light-color);
+  }
+  .dropdown-item:mouse-over {
+    background-color: var(--second-color);
+    color: var(--light-color);
+  }
 }
