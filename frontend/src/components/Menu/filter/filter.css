@@ -1,50 +1,41 @@
-.filter{
-    background-color: #625fff;
-    margin: 20px;
-    height: 50px;
-    border-radius: 10px;
+.filter {
+  background-color: #625fff;
+  margin: 20px;
+  height: 50px;
+  border-radius: 10px;
 }
-#filter-button{
-    width: 85px;
-    height: 50%;
-    background-color: white;
-    color: #ffb800;
-    border-radius: 10px;
-    border: none;
-    margin: 13px;
-    font-size: 1rem;
-
-
-
+#filter-button {
+  width: 85px;
+  height: 50%;
+  background-color: white;
+  color: #ffb800;
+  border-radius: 10px;
+  border: none;
+  margin: 13px;
+  font-size: 1rem;
 }
 
-#filter-button:hover{
-    background-color: #afadff;
-
+#filter-button:hover {
+  background-color: #afadff;
 }
 
-
-@media screen and (min-width: 850px){
-
-#filter-button{
+@media screen and (min-width: 850px) {
+  #filter-button {
     width: 180px;
     height: 60px;
-font-size: 2rem;
-}
+    font-size: 2rem;
+  }
 
-
-
-#filter-button:hover{
+  #filter-button:hover {
     background-color: #afadff;
     color: #ffb800;
     border-radius: 10px;
     border: none;
     margin: 13px;
-    
-}
+  }
 
-.filter{
-   background-color: #625fff;
+  .filter {
+    background-color: #625fff;
     border-radius: 10px;
     margin: 20px 280px;
     height: 90px;
@@ -52,7 +43,5 @@ font-size: 2rem;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    
-}
-
+  }
 }
