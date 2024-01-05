@@ -3,12 +3,7 @@
 }
 
 .showLivraison {
-  display: block;
-}
-
-.delivery {
   display: flex;
-  gap: 10px;
 }
 
 .inputdelivery {
@@ -33,8 +28,25 @@ input::placeholder {
 
 .geoapify-autocomplete-input {
   color: black;
+  width: 402px;
 }
 
 .geoapify-autocomplete-items {
   background-color: var(--second-color) !important;
+  width: 402px;
+}
+
+.geoapify-autocomplete-item:hover {
+  background-color: var(--tertiary-color) !important;
+}
+
+/* .main-part:hover,
+.secondary-part:hover {
+  color: var(--second-color) !important;
+} */
+
+.geocoder-container {
+  display: flex !important;
+  max-width: 42ch !important;
+  flex-wrap: wrap !important;
 }

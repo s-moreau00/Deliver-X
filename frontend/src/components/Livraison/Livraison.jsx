@@ -1,19 +1,16 @@
 import { useState, useEffect } from "react";
 import "./Livraison.css";
-
+import CestParti from "../Cest-parti/CestParti";
 import {
   GeoapifyGeocoderAutocomplete,
   GeoapifyContext,
 } from "@geoapify/react-geocoder-autocomplete";
 
 export default function Livraison({ deliver }) {
-  // const [data, setData] = useState([]);
-  // const [inputValue, setInputValue] = useState("");
-  // const handleChange = (e) => {
-  //   setInputValue(e.target.value);
-  //   console.info("inputValue :>> ", inputValue);
-  // };
-  const handleClick = () => {};
+  const [selected, setSelected] = useState(false);
+  function onPlaceSelect(value) {
+    setSelected(true);
+  }
   // console.info("accepted", accepted);
 
   // useEffect(() => {
@@ -37,22 +34,10 @@ export default function Livraison({ deliver }) {
     <>
       <div className={deliver ? "showLivraison" : "hideLivraison"}>
         <GeoapifyContext apiKey="61da4cbff54d4c8d9c92cba1462f7047">
-          <GeoapifyGeocoderAutocomplete />
-          <div className="delivery">
-            {/* <input
-            className="inputdelivery"
-            type="text"
-            name="address"
-            placeholder="Ecris ton adresse postale"
-            value={inputValue}
-            onChange={handleChange}
-          /> */}
-            <button className="btn-delivery" onClick={handleClick}>
-              OK
-            </button>
-          </div>
+          <GeoapifyGeocoderAutocomplete placeSelect={onPlaceSelect} />
         </GeoapifyContext>
       </div>
+      <CestParti selected={selected} />
     </>
   );
 }
