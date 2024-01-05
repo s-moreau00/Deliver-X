@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 import "./Livraison.css";
 
+import {
+  GeoapifyGeocoderAutocomplete,
+  GeoapifyContext,
+} from "@geoapify/react-geocoder-autocomplete";
 
-import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete'
-
-export default function Livraison({ }) {
+export default function Livraison({ deliver }) {
   // const [data, setData] = useState([]);
   // const [inputValue, setInputValue] = useState("");
   // const handleChange = (e) => {
   //   setInputValue(e.target.value);
   //   console.info("inputValue :>> ", inputValue);
   // };
-  const handleClick = () => { };
+  const handleClick = () => {};
   // console.info("accepted", accepted);
 
   // useEffect(() => {
@@ -33,10 +35,11 @@ export default function Livraison({ }) {
   // console.info("data 5 =>", data.features[4].properties.label);
   return (
     <>
-      <GeoapifyContext apiKey="61da4cbff54d4c8d9c92cba1462f7047">
-        <GeoapifyGeocoderAutocomplete />
-        <div className="delivery">
-          {/* <input
+      <div className={deliver ? "showLivraison" : "hideLivraison"}>
+        <GeoapifyContext apiKey="61da4cbff54d4c8d9c92cba1462f7047">
+          <GeoapifyGeocoderAutocomplete />
+          <div className="delivery">
+            {/* <input
             className="inputdelivery"
             type="text"
             name="address"
@@ -44,11 +47,12 @@ export default function Livraison({ }) {
             value={inputValue}
             onChange={handleChange}
           /> */}
-          <button className="btn-delivery" onClick={handleClick}>
-            OK
-          </button>
-        </div>
-      </GeoapifyContext>
+            <button className="btn-delivery" onClick={handleClick}>
+              OK
+            </button>
+          </div>
+        </GeoapifyContext>
+      </div>
     </>
   );
 }

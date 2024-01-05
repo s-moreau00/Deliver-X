@@ -1,3 +1,11 @@
+.hideLivraison {
+  display: none;
+}
+
+.showLivraison {
+  display: block;
+}
+
 .delivery {
   display: flex;
   gap: 10px;
