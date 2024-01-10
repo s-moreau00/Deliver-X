@@ -21,7 +21,7 @@ nav > div > h3 {
   font-size: 1.5rem;
   margin-top: 5px;
 }
-nav > div > img {
+nav > div > a > img {
   width: 60px;
   z-index: 100;
 }
@@ -51,7 +51,6 @@ nav > ul {
   position: fixed;
   text-align: center;
   width: 100vw;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   display: flex;
   background-color: var(--main-color);
   transition: top 0.3s ease-in-out;
@@ -100,6 +99,7 @@ nav > ul > li > img {
     padding: 80px 0 60px 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
   nav > ul > li {
     font-size: 1.5rem;
@@ -107,15 +107,12 @@ nav > ul > li > img {
   nav > ul > li > a > img {
     display: none;
   }
+  nav > ul > li > a > div {
+    display: none;
+  }
   nav > ul > li:last-child {
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   }
-  /* .blockLogo {
-    padding-left:10%;
-  }
-  nav > div:nth-of-type(2) {
-  padding-right: 10%;
-} */
 }
 /* large */
 @media screen and (min-width: 850px) {
@@ -130,6 +127,7 @@ nav > ul > li > img {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    margin-left: 13.7rem;
   }
   nav > ul > li {
     margin: 0;
@@ -138,11 +136,24 @@ nav > ul > li > img {
     padding-right: 10%;
   }
   .blockLogo > h3 {
+    position: absolute;
+    top: -50%;
+    left: calc(10% + 70px);
+    transition: top 0.3s ease-in-out;
+  }
+  .blockLogo > h3.titleVisible {
+    top: calc(80px - 55px);
+    left: calc(10% + 70px);
+    transition: top 0.3s linear;
+  }
+  .titre2 {
     display: none;
+    transition: all 0.3s linear;
   }
   nav > ul > li:last-child {
     padding: 0.3rem 1.5rem 0 1.5rem;
     border-radius: 25px;
+    position: relative;
   }
   nav > ul > li > a > img {
     width: 50px;
@@ -153,17 +164,20 @@ nav > ul > li > img {
   .blockLogo {
     padding-left: 10%;
   }
-}
-/*smartphone*/
-/* @media(max-width:430px){
-  nav > div:nth-of-type(1) > h3{
-       display:none;
-   }
-} */
-/* @media(min-width : 750px) and (max-width: 850px){
-   .blockLogo {
-    padding-left:10%;
+
+  .cart-counter-nav {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    font-size: 0.15rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 20px;
+    top: 3px;
   }
-  nav > div:nth-of-type(2) {
-  padding-right: 10%;
-} }*/
+}

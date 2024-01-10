@@ -1,15 +1,27 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import menuItems from "../../../../menuItems.json";
-
+import "../../../cartLink/cartLink.css";
 import "./card.css";
+import CartLink from "../../../cartLink/CartLink";
 
 export default function Card() {
+  const [cart, setCart] = useState([]);
+  // fonctionnel, simple
+  // const addToCart = (item) => {
+  //   setCart([...cart, item]);
+  // };
+
+  // fonctionnel + ajout de la paire quantity + valeur à 1
+  const addToCart = (item) => {
+    setCart([...cart, { ...item, quantity: 1 }]);
+  };
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [{ items }] = useState(menuItems);
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
+
   // new Set() élimine automatiquement les doublons, laissant uniquement les catégories uniques.
   const uniqueCategories = Array.from(new Set(items.map((item) => item.type)));
 
@@ -17,6 +29,10 @@ export default function Card() {
     selectedCategory === "All"
       ? items
       : items.filter((item) => item.type === selectedCategory);
+
+  console.info("cart", cart);
+  console.info("setCart", setCart);
+
   return (
     <div>
       <div className="category-filter">
@@ -50,12 +66,17 @@ export default function Card() {
                 <div className="card-name">{item.name}</div>
                 <span className="card-price">{item.prix}</span>
               </div>
-              <button className="button" type="submit">
+              <button
+                className="button"
+                type="submit"
+                onClick={() => addToCart(item)}
+              >
                 Ajouter au panier
               </button>
             </div>
           </div>
         ))}
+        <CartLink cart={cart} />
       </main>
     </div>
   );
