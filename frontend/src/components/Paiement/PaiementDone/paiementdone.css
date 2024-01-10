@@ -14,10 +14,10 @@
 font-size: 1.3rem;
 }
 
-:nth-child(2) {
+.first-p {
     margin: 0 0 0.5rem;
 }
 
-:nth-child(3) {
+.second-p {
 margin: 0 0 2rem;
 }
