@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
 import Cities from "./components/Cities/Cities";
 import ClickOrDeliver from "./components/ClickOrDeliver/ClickOrDeliver";
 import Livraison from "./components/Livraison/Livraison";
@@ -11,6 +10,7 @@ import Menu from "./components/Menu/Menu";
 import Contact from "./components/Contact/Contact";
 import Panier from "./components/Panier/Panier";
 import NotFound from "./components/NotFound/NotFound";
+import ValidationLivraison from "./components/validationLivraion/ValidationLivraison";
 
 function AppLayout() {
   return (
@@ -53,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/panier",
         element: <Panier />,
+      },
+      {
+        path: "/validation-livraison",
+        element: <ValidationLivraison />,
       },
       {
         path: "*",

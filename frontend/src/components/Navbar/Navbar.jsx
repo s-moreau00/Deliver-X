@@ -11,31 +11,45 @@ export default function Navbar() {
   const handleMenu = () => {
     setOpenMenu(!openMenu);
   };
+  /* fonction pour que quand le logo est cliqué il ferme le menu si celui ci est ouvert  */
+  const handleMenuLogo = () => {
+    setOpenMenu(false);
+  };
 
   return (
     <nav>
       <div className="blockLogo">
-        <img src={logoSmall} alt="logo" />
-        <h3>Deliver X</h3>
+        <Link to="/" onClick={handleMenuLogo}>
+          <img src={logoSmall} alt="logo" />
+        </Link>
+        <h3 className={openMenu ? "titleVisible" : ""}>Deliver X</h3>
       </div>
       <ul className={openMenu ? "linkVisible" : ""}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={handleMenu}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/menu">Menu</Link>
+          <Link to="/menu" onClick={handleMenu}>
+            Menu
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={handleMenu}>
+            Contact
+          </Link>
         </li>
         <li>
-          <Link to="/panier">
+          <Link to="/panier" onClick={handleMenu}>
             Mon Panier
             <img src={cart} alt="panier" />
+            <div className="cart-counter-nav">1</div>
+            {/* si cart partager dans app : ajouter {cart.length} = compte du nombre de  produit dans le panier */}
           </Link>
         </li>
       </ul>
-      <h3 className="titre">Deliver X</h3>
+      <h3 className={`titre ${openMenu ? "titre2" : ""}`}>Deliver X</h3>
       <div>
         <button type="button" onClick={handleMenu}>
           <img
