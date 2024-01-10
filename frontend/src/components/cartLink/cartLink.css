@@ -12,8 +12,11 @@
   z-index: 100;
   top: 80vh;
   right: 5%;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+.cart-link-open {
+  opacity: 1;
 }
 .cart-link > img {
   width: 80%;
