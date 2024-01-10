@@ -1,5 +1,9 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
+
 import PropTypes from "prop-types";
+
 
 export default function CartTotal({ products }) {
   const totalPriceByItem = products.map(
@@ -13,9 +17,11 @@ export default function CartTotal({ products }) {
         <p>Total</p>
         <p>{totalCart.toFixed(2)} €</p>
       </div>
-      <button type="button" className="valider">
-        Valider
-      </button>
+      <Link to="/paiement">
+        <button type="button" className="valider">
+          Valider
+        </button>
+      </Link>
     </div>
   );
 }

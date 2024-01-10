@@ -6,6 +6,7 @@
   --second-light: #fff1cd;
   --tertiary-light: #ffe4df;
   --dark-color: #383838;
+  --light-dark:#908989;
   --light-color: #f8f8f8;
   --fonts: "venice-blvd";
 }
@@ -16,8 +17,6 @@
   padding: 0;
   font-family: var(--fonts);
   color: var(--light-color);
-  /* transition: all 0.3s ease-in-out; */
-  /* transition: all 0.3s ease-in-out; */
 }
 
 header,
