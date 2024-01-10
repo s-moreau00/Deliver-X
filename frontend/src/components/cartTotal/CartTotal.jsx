@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CartTotal() {
   // const totalCart = totalPriceByItem.reduce(
@@ -13,9 +14,11 @@ export default function CartTotal() {
         <p>Total</p>
         <p>55,00 €</p>
       </div>
-      <button type="button" className="valider">
-        Valider
-      </button>
+      <Link to="/paiement">
+        <button type="button" className="valider">
+          Valider
+        </button>
+      </Link>
     </div>
   );
 }

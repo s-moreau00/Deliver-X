@@ -6,9 +6,6 @@
 
 .clickCollect-selected,
 .deliver-selected {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--second-light);
   color: var(--second-color);
   font-size: 1rem;

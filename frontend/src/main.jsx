@@ -11,6 +11,8 @@ import Menu from "./components/Menu/Menu";
 import Contact from "./components/Contact/Contact";
 import Panier from "./components/Panier/Panier";
 import NotFound from "./components/NotFound/NotFound";
+import Paiement from "./components/Paiement/Paiement";
+import PaiementDone from "./components/Paiement/PaiementDone/PaiementDone";
 
 function AppLayout() {
   return (
@@ -57,6 +59,15 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
+      },
+      {
+        path: "/paiement",
+        element: <Paiement />,
+      },
+
+      {
+        path: "/paiementdone",
+        element: <PaiementDone />,
       },
     ],
   },

@@ -1,0 +1,12 @@
+.paiement-done-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.paiement-done-container h3 {
+    width: 40ch;
+}
+

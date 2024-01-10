@@ -21,24 +21,37 @@ export default function Paiement() {
           <label>
             {" "}
             E-mail
-            <input className="pay-form-input" type="email" />
+            <input
+              className="pay-form-input"
+              type="email"
+              placeholder="&ensp;Ecrivez votre e-mail"
+              required
+            />
           </label>
-          <label className="pay-label-info-bank">
-            <h4>Informations bancaires</h4>{" "}
+          <label className="pay-form-bank">
+            Informations bancaires
             <input
-              className="pay-form-input-1"
-              type="number"
-              placeholder="1234 1234 1234 1234"
+              className="bank-input-1"
+              type="tel"
+              placeholder="&ensp;1234 1234 1234 1234"
+              min="0"
+              max="9999 9999 9999 9999"
+              required
             />
             <input
-              className="pay-form-input-2"
+              className="bank-input-2"
               type="month"
-              placeholder="MM/AAAA"
+              placeholder="&ensp;MM/AAAA"
+              min="0"
+              required
             />
             <input
-              className="pay-form-input-3"
-              type="number"
-              placeholder="CVC"
+              className="bank-input-3"
+              type="tel"
+              placeholder="&ensp;CVC"
+              min="0"
+              max="999"
+              required
             />
           </label>{" "}
           <label>
@@ -47,14 +60,16 @@ export default function Paiement() {
             <input
               className="pay-form-input"
               type="text"
-              placeholder="Ecrivez votre nom"
+              placeholder="&ensp;Ecrivez votre nom"
+              required
             />
           </label>
+          <Link to="/paiementdone">
+            <button type="submit" className="btn-pay" value="Payer XX€">
+              Payer XX€
+            </button>
+          </Link>
         </form>
-        <button type="button" className="pay-btn-pay">
-          {" "}
-          Payer XX€{" "}
-        </button>
       </div>
     </main>
   );
