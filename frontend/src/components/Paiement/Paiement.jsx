@@ -4,6 +4,10 @@ import "./paiement.css";
 import arrow from "../../assets/icones/round-alt-arrow-left-svgrepo-com.svg";
 
 export default function Paiement() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <main className="pay-page">
       <Link to="/panier" className="link-back">
@@ -13,11 +17,13 @@ export default function Paiement() {
 
       <div className="pay-container">
         <h2>Paiement</h2>
-        <button type="button" className="google-pay">
-          Google Pay
+        <button type="submit" form="pay" className="google-pay">
+          <Link to="/paiementdone" className="btn-pay-link">
+            Google Pay
+          </Link>
         </button>
         <h3 className="pay-h3"> payer par carte </h3>
-        <form className="pay-form">
+        <form id="pay" className="pay-form" onSubmit={handleSubmit}>
           <label>
             {" "}
             E-mail
@@ -64,11 +70,11 @@ export default function Paiement() {
               required
             />
           </label>
-          <Link to="/paiementdone">
-            <button type="submit" className="btn-pay" value="Payer XX€">
+          <button type="submit" className="btn-pay" value="Payer XX€">
+            <Link to="/paiementdone" className="btn-pay-link">
               Payer XX€
-            </button>
-          </Link>
+            </Link>
+          </button>
         </form>
       </div>
     </main>
