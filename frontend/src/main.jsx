@@ -16,7 +16,6 @@ import PaiementDone from "./components/Paiement/PaiementDone/PaiementDone";
 
 import ValidationLivraison from "./components/validationLivraion/ValidationLivraison";
 
-
 function AppLayout() {
   return (
     <Layout>
