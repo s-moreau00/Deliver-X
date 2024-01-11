@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./ClickOrDeliver.css";
 import Cities from "../Cities/Cities";
 import Livraison from "../Livraison/Livraison";
+import { userContext } from "../../contexts/userContexts";
 
 export default function ClickOrDeliver({ restaurant }) {
   // state bouton Click'n Collect
@@ -11,16 +12,28 @@ export default function ClickOrDeliver({ restaurant }) {
   // state bouton Livraison
   const [deliver, setDeliver] = useState(false);
 
+  const { setUser } = useContext(userContext);
+
   // fonction onClick bouton Click and Collect
   const handleClickCollect = () => {
-    setClickCollect(!clickCollect);
+    const newStateCollect = !clickCollect;
+    const newStateDeliver2 = false;
+    setClickCollect(newStateCollect);
     setDeliver(false);
+    localStorage.setItem("userClickcollect", JSON.stringify(newStateCollect));
+    localStorage.setItem("userDeliver", JSON.stringify(newStateDeliver2));
+    setUser(JSON.parse(localStorage.getItem("userClickcollect")));
   };
 
   // foncton onClick bouton Livraison
   const handleDeliver = () => {
-    setDeliver(!deliver);
+    const newStateDeliver = !deliver;
+    const newStateCollect2 = false;
+    setDeliver(newStateDeliver);
     setClickCollect(false);
+    localStorage.setItem("userDeliver", JSON.stringify(newStateDeliver));
+    localStorage.setItem("userClickcollect", JSON.stringify(newStateCollect2));
+    setUser(JSON.parse(localStorage.getItem("userDeliver")));
   };
 
   return (

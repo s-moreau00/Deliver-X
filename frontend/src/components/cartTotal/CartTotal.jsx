@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
 
-
 export default function CartTotal({ products }) {
   const totalPriceByItem = products.map(
     ({ prix, quantity }) => prix * quantity

@@ -1,16 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
+import PropTypes from "prop-types";
 import "./Livraison.css";
-import CestParti from "../Cest-parti/CestParti";
 import {
   GeoapifyGeocoderAutocomplete,
   GeoapifyContext,
 } from "@geoapify/react-geocoder-autocomplete";
+import { userContext } from "../../contexts/userContexts";
+import CestParti from "../Cest-parti/CestParti";
 
 export default function Livraison({ deliver }) {
   const [selected, setSelected] = useState(false);
-  function onPlaceSelect(value) {
+  const { setUser } = useContext(userContext);
+  const [dataAddress, setDataAddress] = useState({});
+  const [address, setAddress] = useState({});
+  const handleClick = (e) => {
+    const { address_line1, value } = e.target;
+    setDataAddress({ ...dataAddress, [address_line1]: value });
+    localStorage.setItem("address", JSON.stringify(address));
+    setUser(JSON.parse(localStorage.getItem("address")));
+  };
+  const placeSelect = (value) => {
     setSelected(true);
-  }
+    setAddress(value);
+    // setDataAddress({...value});
+    // console.log('dataAddress', address);
+    // console.log("dataAddress2", value);
+  };
+
+  // function placeSelect(value) {
+  //   setSelected(true);
+  //   setDataAddress(value);
+  //   console.log('dataAddress', dataAddress);
+  // };
+
   // console.info("accepted", accepted);
 
   // useEffect(() => {
@@ -34,10 +56,13 @@ export default function Livraison({ deliver }) {
     <>
       <div className={deliver ? "showLivraison" : "hideLivraison"}>
         <GeoapifyContext apiKey="61da4cbff54d4c8d9c92cba1462f7047">
-          <GeoapifyGeocoderAutocomplete placeSelect={onPlaceSelect} />
+          <GeoapifyGeocoderAutocomplete placeSelect={placeSelect} />
         </GeoapifyContext>
       </div>
-      <CestParti selected={selected} />
+      <CestParti selected={selected} handleClick={handleClick} />
     </>
   );
 }
+Livraison.propTypes = {
+  deliver: PropTypes.bool.isRequired,
+};
