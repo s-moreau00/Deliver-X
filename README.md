@@ -1,19 +1,26 @@
-## Hi there, i'm G1. Welcome to my page. 👋
+## Hi there, i'm G2. Welcome to my page. 👋
 
 ![image](image/g2.png)
+
+
+Il s'agit d'un projet #2 dans le cadre d'un BOOTCAMP (Développeur WEB) chez Wild Code School.
 
 ## Team :
 
 Imaginez une équipe de développeurs avides de code, où coder est devenu notre seconde nature. Eh bien, devinez quoi ? Nous sommes sur le point de faire naître une application React qui va révolutionner votre monde numérique. Attachez vos ceintures !
 
-- Arthur
-- Nadir
-- Alexandra
-- Sylvain
+- Arthur Vincent
+- Nadir Khouani
+- Aleksandra Hamon
+- Sylvain Moreau
 
 ## Objectifs
+Creer une Application Web pour une chaîne de restorants dans toute la France  avec un resto par ville (ex : Paris, Lyon, Bordeaux, etc.). Possibilité de choisir la ville et de commander en click'ncollect et livraison.
 
-## workflow
+## Maquette 
+Nous avons utilisé Figma pour creer la maquette de notre application 
+ https://www.figma.com/file/SOPeLvlICgZzXV1sDQ2zTY/King-Burger-Prototype-animation-design-(Community)?type=design&node-id=6-74&mode=design&t=ksW3kwyThlcXGgvt-0 
+
 
 ### Nomenclature des branches :
 
@@ -23,6 +30,7 @@ Imaginez une équipe de développeurs avides de code, où coder est devenu notre
 - Chaque merge vers `dev`, Créer une Pull-Request(PR)
 
 ## Méthode Agile
+SCRUM
 
 #### Sprint d'une semaine
 
