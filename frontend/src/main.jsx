@@ -10,12 +10,11 @@ import Menu from "./components/Menu/Menu";
 import Contact from "./components/Contact/Contact";
 import Panier from "./components/Panier/Panier";
 import NotFound from "./components/NotFound/NotFound";
-
+import { UserContextProvider } from "./contexts/userContexts.jsx";
 import Paiement from "./components/Paiement/Paiement";
 import PaiementDone from "./components/Paiement/PaiementDone/PaiementDone";
 
 import ValidationLivraison from "./components/validationLivraion/ValidationLivraison";
-
 
 function AppLayout() {
   return (
@@ -82,4 +81,8 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider router={router} />);
+root.render(
+  <UserContextProvider>
+    <RouterProvider router={router} />
+  </UserContextProvider>
+);
