@@ -149,6 +149,15 @@
   }
 
   .cards-all {
-    padding: 100px 200px;
+    padding: 50px 200px;
+  }
+
+  .cards {
+    width: 200px;
+    height: 280px;
+  }
+  .card-img img {
+    max-height: 150px;
+    width: auto;
   }
 }
