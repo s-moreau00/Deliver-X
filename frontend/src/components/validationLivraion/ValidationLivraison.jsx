@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./validationLivraison.css";
 import logoBurger from "../../assets/logoP2/LogoP2_large.png";
 import scooter from "../../assets/icones/scooter01.png";
@@ -17,15 +17,14 @@ export default function ValidationLivraison() {
   const userAddress2 = JSON.parse(localStorage.getItem("address 2"));
   return (
     <main className="message-container">
-      <Link to="/">
+      {/* <Link to="/">
         <img src={logoBurger} alt="" />
-      </Link>
+      </Link> */}
       <h1>Félicitations !</h1>
       <h2>Votre commande n°{getRandomNumber(1255, 38540)} est en route !</h2>
       <h3>
-        Le livreur vous retrouve à l'adresse:
-        <br />
-        {`${userAddress} ${userAddress2}`}
+        On se retrouve très vite à :<br />
+        <div>{`${userAddress} ${userAddress2}`}</div>
       </h3>
       <img src={logoBurger} alt="" />
       <img src={scooter} alt="" />

@@ -7,6 +7,8 @@ import cart from "../../assets/icones/cart-large-2-svgrepo-com.svg";
 import logoSmall from "../../assets/logoP2/LogoP2_small.png";
 
 export default function Navbar() {
+  const cartUpdated = JSON.parse(localStorage.getItem("cartUpdated"));
+  console.log("cartUpdated", cartUpdated);
   const [openMenu, setOpenMenu] = useState();
   const handleMenu = () => {
     setOpenMenu(!openMenu);
@@ -44,7 +46,7 @@ export default function Navbar() {
           <Link to="/panier" onClick={handleMenu}>
             Mon Panier
             <img src={cart} alt="panier" />
-            <div className="cart-counter-nav">1</div>
+            <div className="cart-counter-nav">{cartUpdated.length}</div>
             {/* si cart partager dans app : ajouter {cart.length} = compte du nombre de  produit dans le panier */}
           </Link>
         </li>
@@ -56,10 +58,11 @@ export default function Navbar() {
           onClick={handleMenu}
           className={openMenu ? "closebar-hiden-desktop" : ""}
         >
+          {" "}
           <img
             src={openMenu ? close : menuBurger}
             /* le menu est il ouvert (true) ? si oui(true) exècute l'instruction 1, si non (false) exècute l'instruction 2 ;
-           par défault à null (donc false, exécute la deuxième instruction)
+           par défault false, exécute la deuxième instruction)
            instruction 1 : src = chemin vers icône close (s'affiche quand le menu est ouvert)
            instruction 2 : src = chemin vers icône menu burger (s'affiche quand le menu est fermé)
            */

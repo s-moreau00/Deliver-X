@@ -6,16 +6,52 @@ import "./card.css";
 import CartLink from "../../../cartLink/CartLink";
 
 export default function Card() {
-  const [cart, setCart] = useState([]);
+  const cartUpdated = JSON.parse(localStorage.getItem("cartUpdated"));
+
+  const [cart, setCart] = useState([...cartUpdated]);
+
   // fonctionnel, simple
   // const addToCart = (item) => {
   //   setCart([...cart, item]);
   // };
 
   // fonctionnel + ajout de la paire quantity + valeur à 1
+
+  // const addToCart = (item) => {
+  //   setCart([...cart, { ...item, quantity: 1 }]);
+  // };
+
+  // fonctionnel, incrémente le produit si est déjà présent dans le panier
+  // on utilise findIndex et ensuite si l'index est sup à -1 donc si existe on augmente
+  // la quantité du produit en ciblant le produit du panier à l'index correspondant à celui récupérer avec findIndex :
+  // const addToCart = (item) => {
+  //   const itemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
+
+  //   if (itemIndex !== -1) {
+  //     const updatedCart = [...cart];
+  //     updatedCart[itemIndex].quantity++;
+  //     setCart(updatedCart);
+  //   } else {
+  //     setCart([...cart, { ...item, quantity: 1 }]);
+  //   }
+  // };
+
   const addToCart = (item) => {
-    setCart([...cart, { ...item, quantity: 1 }]);
+    const itemInCart = cart.find((cartItem) => cartItem.id === item.id);
+
+    if (itemInCart) {
+      const newCart = cart.map((cartItem) => {
+        if (cartItem.id === item.id) {
+          return { ...cartItem, quantity: cartItem.quantity + 1 };
+        }
+        return cartItem;
+      });
+      setCart(newCart);
+    } else {
+      setCart([...cart, { ...item, quantity: 1 }]);
+    }
   };
+
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [{ items }] = useState(menuItems);
   const handleCategoryChange = (category) => {
@@ -57,7 +93,12 @@ export default function Card() {
 
       <main className="cards-all">
         {filteredItems.map((item) => (
-          <div className="cards" key={item.id}>
+          <button
+            className="cards"
+            type="submit"
+            key={item.id}
+            onClick={() => addToCart(item)}
+          >
             <div className="card-img">
               <img src={item.img} alt={item.name} />
             </div>
@@ -66,15 +107,15 @@ export default function Card() {
                 <div className="card-name">{item.name}</div>
                 <span className="card-price">{item.prix}</span>
               </div>
-              <button
+              <div
                 className="button"
-                type="submit"
-                onClick={() => addToCart(item)}
+                // type="submit"
+                // onClick={() => addToCart(item)}
               >
                 Ajouter au panier
-              </button>
+              </div>
             </div>
-          </div>
+          </button>
         ))}
         <CartLink cart={cart} />
       </main>

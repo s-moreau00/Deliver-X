@@ -13,7 +13,6 @@
   height: 50px;
 }
 .panier-h2 {
-  text-align: center;
   color: var(--dark-color);
 }
 .block-product {
@@ -133,7 +132,7 @@
     margin: 0.5rem 0;
   }
   .panier-h2 {
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 2rem 1rem 0;
   }
   .cart {
     overflow-y: scroll;
@@ -150,8 +149,8 @@
 @media (min-width: 850px) {
   .cart-product-image {
     display: inline-block;
-    width: 100px;
-    height: 75px;
+    width: 150px;
+    height: 125px;
   }
   .cart-product-image > img {
     width: 100%;
@@ -203,6 +202,7 @@
   }
   .panier-h2 {
     padding-bottom: 2rem;
+    text-align: center;
   }
   .bottom-block {
     width: 100%;

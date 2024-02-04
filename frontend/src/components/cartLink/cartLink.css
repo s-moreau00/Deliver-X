@@ -8,6 +8,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 100;
   top: 80vh;

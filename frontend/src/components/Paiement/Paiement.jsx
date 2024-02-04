@@ -9,6 +9,7 @@ export default function Paiement() {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
+  const total = parseFloat(JSON.parse(localStorage.getItem("totalCart")));
 
   return (
     <main className="pay-page">
@@ -80,7 +81,7 @@ export default function Paiement() {
               to={userChoice ? "/paiementdone" : "/validation-livraison"}
               className="btn-pay-link"
             >
-              Payer XX€
+              Payer {total.toFixed(2)} €
             </Link>
           </button>
         </form>
