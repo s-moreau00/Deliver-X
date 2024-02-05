@@ -4,7 +4,7 @@
     "db:migrate": "node migrate.js",
     "db:seed": "node seed.js",
     "build": "echo 'No build necessary'",
-    "start": "node index.js",
+    "start": "vite build --output public",
     "test": "jest"
   },
   "dependencies": {
