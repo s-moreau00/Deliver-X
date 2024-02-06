@@ -7,7 +7,7 @@
   padding-right: 200px;
   position: fixed;
   width: 100%;
-  z-index:100;
+  z-index: 100;
 }
 
 .button-filter {
@@ -43,9 +43,9 @@
   transition:
     box-shadow 0.2s ease-in-out,
     transform 0.2s ease-in-out;
-    cursor: pointer;
-    background:transparent;
-    border:whitesmoke;
+  cursor: pointer;
+  background: transparent;
+  border: whitesmoke;
 }
 
 .info-product {
@@ -74,13 +74,13 @@
 }
 
 .button {
-  position:absolute;
-  right:3.6rem;
-  margin:5rem 3.5rem 0 0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:60px;
+  position: absolute;
+  right: 3.6rem;
+  margin: 5rem 3.5rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   width: 150px;
   background-color: #625fff;
   color: #fff;
@@ -116,8 +116,8 @@
 } */
 
 @media screen and (min-width: 850px) {
-  .button{
-    display:none;
+  .button {
+    display: none;
   }
   .cards:hover {
     box-shadow:
@@ -171,7 +171,7 @@
   }
 
   .cards {
-    width:300px;
+    width: 300px;
     height: 400px;
   }
   .card-img img {

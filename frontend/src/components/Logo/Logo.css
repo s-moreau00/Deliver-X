@@ -1,9 +1,16 @@
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .logoSection {
     align-items: center;
     width: 50%;
     margin: 50px auto 0 auto;
     display: block;
     /* padding-top: 100px; */
+  }
+}
+@media (min-width: 768px) {
+  .logoSection {
+    position: absolute;
+    width: 24vw;
+    top: 10rem;
   }
 }

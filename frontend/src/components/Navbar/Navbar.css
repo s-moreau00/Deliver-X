@@ -9,7 +9,7 @@
   z-index: 100;
 }
 /* z-index positione l'élément au dessus des autres élèments,
-plus le z-index est élevé, plus l'élément ciblé se place au dessus des autres *//*
+plus le z-index est élevé, plus l'élément ciblé se place au dessus des autres */ /*
 .blockLogo {
   z-index: 100;
   padding-left: 1rem;
@@ -26,7 +26,7 @@ nav > div > a > img {
   z-index: 100;
 }
 /* pseudo classe nth-of-type(), permet de cibler précisement un élément de même type (par exemple la deuxième div contenu
-dans la barre de navigation <nav> *//*
+dans la barre de navigation <nav> */ /*
 nav > div:nth-of-type(2) {
   z-index: 100;
   padding-right: 0.5rem;
@@ -72,7 +72,7 @@ nav > ul > li:hover {
 }
 /* classe ajouter quand le menu burger est ouvert (openMenu = true) et retirer quand le menu burger est fermé (openMenu = false).
 La position top passe de -50% (en dehors de l'écran) à 0.
-Avec cette classe, ul et son contenu est donc visible *//*
+Avec cette classe, ul et son contenu est donc visible */ /*
 
 .linkVisible {
   top: 0;
@@ -89,7 +89,7 @@ nav > ul > li > img {
   padding: 0 0 10px 5px;
 }
 
-/*intermediaire*//*
+/*intermediaire*/ /*
 @media screen and (max-width: 850px) {
   nav > ul {
     flex-direction: column;
@@ -112,7 +112,7 @@ nav > ul > li > img {
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   }
 }
-/* large *//*
+/* large */ /*
 @media screen and (min-width: 850px) {
   nav {
     padding: 0;

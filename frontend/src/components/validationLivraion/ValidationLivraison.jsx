@@ -12,7 +12,6 @@ export default function ValidationLivraison() {
     maxValue = Math.floor(maxValue);
     return Math.floor(Math.random() * (maxValue - minValue)) + minValue;
   };
-
   const userAddress = JSON.parse(localStorage.getItem("address 1"));
   const userAddress2 = JSON.parse(localStorage.getItem("address 2"));
   return (
